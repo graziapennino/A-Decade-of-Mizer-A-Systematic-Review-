@@ -439,6 +439,14 @@ ggraph(g, layout = "fr") +
 ggsave("./Figures/Figure_4.jpeg", width = 6, height = 3.5)
 
 
+# Summary metrics
+num_nodes <- vcount(g)
+num_edges <- ecount(g)
+avg_degree <- mean(degree(g))
+density <- edge_density(g)
+clustering <- transitivity(g, type = "global")
+net_diameter <- diameter(g)
+
 # F5 ---------------------------------------------------------------------------
 
 # Journals Figure
