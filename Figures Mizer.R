@@ -122,7 +122,7 @@ ggplot()  +
   guides(fill = guide_legend(nrow = 5, byrow = TRUE))  # Coloca la leyenda en 3 filas
 
 #  Save plot 
-ggsave("./Figures/F1_Cumulative.jpeg", width=6, height=6, dpi=300)
+ggsave("./Figures/Figure_1.jpeg", width=6, height=6, dpi=300)
 
 # F2 ---------------------------------------------------------------------------
 
@@ -205,7 +205,7 @@ ggplot() +
   coord_fixed(ratio = 1) 
 
 # Save plot 
-ggsave("./Figures/F2_Map.jpeg", width=8, height=5, dpi=300)
+ggsave("./Figures/Figure_2.jpeg", width=8, height=5, dpi=300)
 
 # F3 ---------------------------------------------------------------------------
 
@@ -294,6 +294,10 @@ sankey_plot <- sankeyNetwork(Links = links, Nodes = nodes, Source = "source", Ta
 
 # Save the plot manually in jpeg
 sankey_plot
+
+#saveWidget(sankey_plot, "temp_sankey.html", selfcontained = TRUE)
+
+# webshot("temp_sankey.html", "./Figures/Figure_3.jpeg", vwidth = 1000, vheight = 800)
 
 # F4 ---------------------------------------------------------------------------
 
@@ -432,7 +436,7 @@ ggraph(g, layout = "fr") +
   ylab(" ")
 
 # Save the adjusted graph with a height of 4
-ggsave("./Figures/F4_Collaboration.jpeg", width = 6, height = 3.5)
+ggsave("./Figures/Figure_4.jpeg", width = 6, height = 3.5)
 
 
 # F5 ---------------------------------------------------------------------------
@@ -491,6 +495,6 @@ ggplot(data, aes(x = reorder(Journal, Journal), y = Count)) +
         scale_x_discrete(limits = rev(levels(data$Journal))) 
 
 # Save plot 
-ggsave("./Figures/F5_Journals.jpeg", width=6, height=8, dpi=300)
+ggsave("./Figures/Figure_5.jpeg", width=6, height=8, dpi=300)
 
 # F6, F7 and F8 are diagrams made in PPT/Canvas, not in R
