@@ -8,5 +8,7 @@ We provide:
 
 
 ## Citation
-If you use or adapt this code, please cite the original paper.
+If you use or adapt this code, please cite the original paper: 
+Pennino et al. A Decade of Mizer: A Systematic Review of Advancements and Applications of Size Spectrum Modeling in Aquatic Ecosystems. Under review in Ecological Modelling
+
 
