@@ -11,7 +11,7 @@ We provide:
 If you use or adapt this code, please cite the original paper: 
 Pennino et al. A Decade of Mizer: A Systematic Review of Advancements and Applications of Size Spectrum Modeling in Aquatic Ecosystems. Under review in Ecological Modelling
 
-## NOTE
+## IMPORTANT NOTE
 The reference list of the published paper is incorrect. I made a serious mistake, for which I take full and complete responsibility. My co-authors had absolutely no involvement. Specifically, I used ChatGPT to help format the references; however, ChatGPT produced numerous errors, and I failed to carefully check the output. The list of articles we reviewed was correctly reported in Table 1 of the supplementary material, and the full list of references is provided below:
 
 # References
