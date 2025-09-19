@@ -31,6 +31,7 @@ Benoit, D.M., Giacomini, H.C., Chu, C., Jackson, D.A., 2021. Identifying influen
 Blanchard, J.L., Andersen, K.H., Scott, F., Hintzen, N.T., Piet, G., Jennings, S., 2014. Evaluating targets and trade‐offs among fisheries and conservation objectives using a multispecies size spectrum model. J. Appl. Ecol. 51(3), 612–622. https://doi.org/10.1111/1365-2664.12238.  
 
 Canales, T.M., Delius, G.W., Law, R., 2020. Regulation of fish stocks without stock–recruitment relationships: The case of small pelagic fish. Fish. Fish. 21(5), 857–871. https://doi.org/10.1111/faf.12465.  
+
 Clements, C.F., McCarthy, M.A., Blanchard, J.L., 2019. Early warning signals of recovery in complex systems. Nat. Commun. 10(1), 1681. https://doi.org/10.1038/s41467-019-09684-y. 
 
 Csardi, G., Nepusz, T., 2006. The igraph software package for complex network research. Int. J. Complex Syst. 1695, 1–9. 
