@@ -402,14 +402,16 @@ if (any(!country_count$country %in% V(g)$name)) {
 # Define a color vector for each country (ensure 'colors_count' is defined)
 colors_count <- setNames(RColorBrewer::brewer.pal(n = length(unique(country_count$country)), name = "Paired"),
                          unique(country_count$country))
-
+## NOTE — Layout & reproducibility:
+# The Fruchterman–Reingold layout ("fr") is stochastic: node coordinates vary across runs
 # Create the graph using ggraph (Adjusted Option 1)
 ggraph(g, layout = "fr") +  
   geom_edge_link(aes(width = width), color = "grey") +
   geom_node_point(aes(size = size, color = name)) +
   geom_node_text(aes(label = name), repel = TRUE) +
   scale_edge_width(name = "Frequency",
-                   breaks = c(50, 100, 150, 200, 250),
+                   breaks = c(50, 100, 150, 200, 250),# Edge widths are RESCALED purely for readability. The legend breaks (50, 100, 150, 200, 250)
+# correspond to rescaled units used for plotting, NOT to raw collaboration counts.
                    range = c(0.5, 5)) +
   scale_size_continuous(name = "Publications", range = c(3, 13)) +
   scale_color_manual(values = colors_count, guide = "none") +
@@ -506,3 +508,4 @@ ggplot(data, aes(x = reorder(Journal, Journal), y = Count)) +
 ggsave("./Figures/Figure_5.jpeg", width=6, height=8, dpi=300)
 
 # F6, F7 and F8 are diagrams made in PPT/Canvas, not in R
+
